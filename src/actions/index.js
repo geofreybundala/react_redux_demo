@@ -9,7 +9,6 @@ export const selectSong = (song)=>{
 
 
 export const addSong = (song)=>{
-    console.log(song)
     return {
         type:'ADD_SONG',
         payload:song

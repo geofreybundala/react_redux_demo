@@ -34,8 +34,6 @@ const AddSong = (props) => {
         </div>
     )
 }
-const mapStateToProps =(state)=>{
-    return {songs:state.songs}
-}
+
 const mapDispatchToProps ={addSong};
-export default connect(mapStateToProps, mapDispatchToProps)(AddSong)
+export default connect(null, mapDispatchToProps)(AddSong)

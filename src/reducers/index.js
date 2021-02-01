@@ -8,7 +8,6 @@ const initialsongs =[
 ]
 
 const songsReducers =(songs=initialsongs,action)=>{
-    console.log(action)
     if(action.type==='ADD_SONG'){
        let oldsongs =songs
         return [...oldsongs,action.payload]
@@ -19,7 +18,6 @@ const songsReducers =(songs=initialsongs,action)=>{
 
 
 const selectedSongReducer =(selectedSong=null,action)=>{
-    // console.log(action)
     if(action.type==='SONG_SELECTED'){
         return action.payload
     }
